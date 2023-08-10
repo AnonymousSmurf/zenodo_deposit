@@ -1,0 +1,158 @@
+{
+  "type": "object",
+  "properties": {
+    "upload_type": { "type": "string" },
+    "publication_type": { "type": "string" },
+    "image_type": { "type": "string" },
+    "publication_date": { "type": "string" },
+    "title": { "type": "string" },
+    "creators": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "affiliation": { "type": "string" },
+          "orcid": { "type": "string" },
+          "gnd": { "type": "string" }
+        },
+        "required": ["name"]
+      }
+    },
+    "description": { "type": "string" },
+    "access_right": { "type": "string" },
+    "license": { "type": "string" },
+    "embargo_date": { "type": "string" },
+    "access_conditions": { "type": "string" },
+    "doi": { "type": "string" },
+    "prereserve_doi": { "type": ["boolean", "object"] },
+    "keywords": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "notes": { "type": "string" },
+    "related_identifiers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "identifier": { "type": "string" },
+          "relation": { "type": "string" },
+          "resource_type": { "type": "string" }
+        }
+      }
+    },
+    "contributors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "type": { "type": "string" },
+          "affiliation": { "type": "string" },
+          "orcid": { "type": "string" },
+          "gnd": { "type": "string" }
+        }
+      }
+    },
+    "references": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "communities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "identifier": { "type": "string" }
+        }
+      }
+    },
+    "grants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" }
+        }
+      }
+    },
+    "journal_title": { "type": "string" },
+    "journal_volume": { "type": "string" },
+    "journal_issue": { "type": "string" },
+    "journal_pages": { "type": "string" },
+    "conference_title": { "type": "string" },
+    "conference_acronym": { "type": "string" },
+    "conference_dates": { "type": "string" },
+    "conference_place": { "type": "string" },
+    "conference_url": { "type": "string" },
+    "conference_session": { "type": "string" },
+    "conference_session_part": { "type": "string" },
+    "imprint_publisher": { "type": "string" },
+    "imprint_isbn": { "type": "string" },
+    "imprint_place": { "type": "string" },
+    "partof_title": { "type": "string" },
+    "partof_pages": { "type": "string" },
+    "thesis_supervisors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "affiliation": { "type": "string" },
+          "orcid": { "type": "string" },
+          "gnd": { "type": "string" }
+        },
+        "required": ["name"]
+      }
+    },
+    "thesis_university": { "type": "string" },
+    "subjects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "term": { "type": "string" },
+          "identifier": { "type": "string" },
+          "scheme": { "type": "string" }
+        }
+      }
+    },
+    "version": { "type": "string" },
+    "language": { "type": "string" },
+    "locations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "lat": { "type": "number" },
+          "lon": { "type": "number" },
+          "place": { "type": "string" },
+          "description": { "type": "string" }
+        },
+        "required": ["place"]
+      }
+    },
+    "dates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "start": { "type": "string" },
+          "end": { "type": "string" },
+          "type": { "type": "string" },
+          "description": { "type": "string" }
+        },
+        "required": ["type"]
+      }
+    },
+    "method": { "type": "string" }
+  },
+  "required": [
+    "upload_type",
+    "title",
+    "creators",
+    "description",
+    "access_right"
+  ]
+}
