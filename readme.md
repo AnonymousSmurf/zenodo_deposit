@@ -12,7 +12,7 @@ Zenodo Deposit is a Python Flask application that provides RESTful APIs to creat
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/your-username/zenodo-uploader.git
+   git clone git@github.com:AnonymousSmurf/zenodo_deposit.git
    ```
 
 2. **Create a Virtual Environment**:
